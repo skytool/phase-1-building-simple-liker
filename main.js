@@ -3,8 +3,19 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const modal = document.querySelector(".modal");
+const hidden = document.querySelector(".hidden");
 
+const hiddenModal = function(){
+  modal.classList.add("hidden");
+  hidden.classList.add("hiden");
+}
 
+document.addEventListener("DOMContentLoaded", function(e){
+  if(e.key === "DOMContentLoaded" && !modal.classList.contains("hidden")) {
+    modalClose();
+  }
+});
 
 
 //------------------------------------------------------------------------------
